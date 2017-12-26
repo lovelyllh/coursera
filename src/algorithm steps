@@ -1,0 +1,19 @@
+1. problem: 
+	find if there is a path between two objects. If there is a path, the two objects relates to each other.
+2. Graph 
+	draw the graph to illustrate and find the pattern
+3. Design a Data Structure to hold the data
+	(1) data structure:
+		The WeightedQuickUnionUF class represents a union¨Cfind data type, 
+ 		The union¨Cfind data type models connectivity among a set of n sites/objects, named 0 through n¨C1.
+ 	(2) data members:
+ 		int[] id;
+ 	(3) Methods:
+ 		It supports the union and find operations,
+4.  algorithm analysis
+	(1) time-complexity, fast enough?
+	(2) space-complexity, fits the memory?
+5. draw a UML diagram
+6. sudo code
+7. implementation of the data structure using real code
+8. real time imeplementation

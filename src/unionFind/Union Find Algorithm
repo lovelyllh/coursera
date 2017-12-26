@@ -1,0 +1,29 @@
+/*reference£º
+ * https://algs4.cs.princeton.edu/code/javadoc/edu/princeton/cs/algs4/WeightedQuickUnionUF.html
+ * http://blog.csdn.net/dm_vincent/article/details/7655764
+*/
+
+1. The Union-Find Algorithm£º
+	£¨1£©is used to model a collection of disjoint sets, 
+	£¨2£© efficiently determines which set an item belongs to(i.e. in nearly constant time) ,
+	£¨3£© test if two items belong to the same set, 
+	£¨4£© and union two disjoint sets into one when needed. 
+	
+2. application:
+(1) Percolation: A model for many physical systems:
+	1> N-by-N grid of sites.
+	2> Each site is open with probability p (or blocked with probability 1 ¨C p).
+	3> System percolates iff top and bottom are connected by open sites.
+	
+	4> the likelihood of percolation depends on site vacancy probability p.
+			p > p*: almost certainly percolates.
+			p < p*: almost certainly does not percolate.
+	
+(2) Dynamic connectivity solution to solve percolation problem:
+	1> Create an object for each site and name them 0 to N 2 ¨C 1.
+	2> Sites are in same component if connected by open sites.
+	3> Percolates iff any site on bottom row is connected to site on top row.
+	
+	notes: 
+	1. Clever trick: Introduce 2 virtual sites (and connections to top and bottom), Percolates iff virtual top site is connected to virtual bottom site.
+	2. How to model opening a new site?--Mark new site as open; connect it to all of its adjacent open sites.
